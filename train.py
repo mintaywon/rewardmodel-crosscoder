@@ -30,7 +30,7 @@ default_cfg = {
     "d_in": base_model.cfg.d_model,
     "dict_size": 2**14,
     "seq_len": 1024,
-    "enc_dtype": "fp32",
+    "enc_dtype": "bf16", # can be one of fp32, fp16, bf16
     "model_name": "gemma-2-2b",
     "site": "resid_pre",
     "device": "cuda:0",
@@ -39,8 +39,8 @@ default_cfg = {
     "save_every": 30000,
     "dec_init_norm": 0.08,
     "hook_point": "blocks.14.hook_resid_pre",
-    "wandb_project": "YOUR_WANDB_PROJECT",
-    "wandb_entity": "YOUR_WANDB_ENTITY",
+    "wandb_project": "crosscoder",
+    "wandb_entity": "taywonmin",
 }
 cfg = arg_parse_update_cfg(default_cfg)
 

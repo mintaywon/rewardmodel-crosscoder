@@ -1,5 +1,12 @@
 # TLDR
 
+## Install
+```bash
+conda env create -n crosscoder python=3.10
+conda activate crosscoder
+pip install -r requirements.txt
+```
+
 Open source replication of [Anthropic's Crosscoders for Model Diffing](https://transformer-circuits.pub/2024/crosscoders/index.html#model-diffing). 
 The crosscoder was trained to model diff the Gemma-2 2b base and IT residual stream at the middle layer.
 

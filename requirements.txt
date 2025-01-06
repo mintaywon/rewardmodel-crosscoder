@@ -1,0 +1,7 @@
+wandb
+IPython
+plotly
+einops
+datasets
+torch
+transformer_lens
