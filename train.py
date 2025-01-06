@@ -20,7 +20,7 @@ all_tokens = load_pile_lmsys_mixed_tokens()
 # %%
 default_cfg = {
     "seed": 49,
-    "batch_size": 4096,
+    "batch_size": 128,
     "buffer_mult": 128,
     "lr": 5e-5,
     "num_tokens": 400_000_000,

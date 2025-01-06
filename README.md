@@ -2,9 +2,20 @@
 
 ## Install
 ```bash
-conda env create -n crosscoder python=3.10
+conda create -n crosscoder python=3.10
 conda activate crosscoder
 pip install -r requirements.txt
+```
+- login to wandb and huggingface
+```bash
+wandb login
+huggingface-cli login
+```
+
+## Train
+Inside train.py there is default_cfg that you should fill in (wandb)
+```bash
+python train.py
 ```
 
 Open source replication of [Anthropic's Crosscoders for Model Diffing](https://transformer-circuits.pub/2024/crosscoders/index.html#model-diffing). 
